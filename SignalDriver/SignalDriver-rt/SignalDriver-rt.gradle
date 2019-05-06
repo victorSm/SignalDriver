@@ -1,0 +1,31 @@
+/* Module Build File */
+
+description     = "Module to demonstrate Driver Basics"
+ext {
+}
+niagaraModule {
+  moduleName = "SignalDriver"
+  preferredSymbol = "sd"
+  runtimeProfile = "rt"
+
+  modulePart {
+      name = "SignalDriver-wb"
+      runtimeProfile = "wb"
+  }
+}
+
+dependencies {
+  compile "Tridium:nre:4.6"
+  compile "Tridium:baja:4.6"
+  compile "Tridium:alarm-rt:4.6"
+  compile "Tridium:bql-rt:4.6"
+  compile "Tridium:control-rt:4.6"
+  compile "acme:devTrafficLights-rt:1.0"
+  compile "Tridium:driver-rt:4.6"
+  compile "Tridium:history-rt:4.6"
+}
+
+moduleTestJar {
+  from('srcTest') {
+  }
+}

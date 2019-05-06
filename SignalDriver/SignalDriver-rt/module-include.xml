@@ -1,0 +1,9 @@
+<!-- Module Include File -->
+<!-- Types -->
+<types>
+  <!-- Type Example:<type name="MyClass" class="com.acme.BMyClass"/> -->
+  <!--com.acme.SignalDriver-->
+  <type class="com.acme.SignalDriver.BSignalDevice" name="SignalDevice"/>
+  <type class="com.acme.SignalDriver.BSignalDeviceFolder" name="SignalDeviceFolder"/>
+  <type class="com.acme.SignalDriver.BSignalDriverNetwork" name="SignalDriverNetwork"/>
+</types>
